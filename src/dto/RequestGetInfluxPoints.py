@@ -1,3 +1,7 @@
-class RequestGetInfluxPoints:
+from pydantic import BaseModel
+
+
+class InfluxPointsParameters(BaseModel):
     user_id:str
-    url:str
+    video_id:int
+
